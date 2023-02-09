@@ -1,0 +1,57 @@
+{
+  "name": "formacao-itsector",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "test": "npm test",
+    "dev": "webpack serve --config webpack.config.js",
+    "prod": "webpack serve --config webpack.production.js",
+    "build": "rm -rf ./build && webpack --config webpack.production.js",
+    "prettier": "prettier --write . --loglevel warn",
+    "eslint": "eslint 'src/**' --fix",
+    "ready": "npm run prettier && npm run eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MJBranco18/formacao-itsector.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MJBranco18/formacao-itsector/issues"
+  },
+  "homepage": "https://github.com/MJBranco18/formacao-itsector#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-dev-server": "^4.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "@webpack-cli/generators": "^3.0.1",
+    "autoprefixer": "^10.4.13",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "coffeescript": "^2.7.0",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.33.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jsxobj": "^1.1.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "postcss": "^8.4.21",
+    "postcss-loader": "^7.0.2",
+    "prettier": "^2.8.4",
+    "serve": "^14.2.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "workbox-webpack-plugin": "^6.5.4"
+  }
+}
